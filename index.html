@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Site</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark py-3 shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">John</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link active">Home</a> </li>
+                    <li class="navbar-item">
+                        <a href="#learn" class="nav-link">What You'll Learn</a> </li>
+                    <li class="navbar-item">
+                        <a href="#FAQ-Accordion" class="nav-link">FAQ</a> </li>
+                    <li class="navbar-item">
+                        <a href="#instructors" class="nav-link">Instructors</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Body-->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+         <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Join Our <span class="text-warning">Web Development</span> Course?</h1>
+                    <p class="lead"> This is a project solely to learn Bootstrap </br></br>
+                        It is a playground to text various bootstrap features.
+                    </p>
+
+                    <button class="btn btn-primary btn-lg my-4" data-bs-toggle="modal" data-bs-target="#enroll">Join Here</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/svg_file3.svg">
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Sign Up-->
+    <section class="bg-primary">
+        <div class="container p-5">
+            <div class="d-md-flex justify-content-between align-items-center">
+            
+                <h3 class="text-white mb-3 mb-md-0 px-2">Sign Up For Our Newsletter</h3>
+
+                <div class="input-group custom_input px-2">
+                    <input type="text" class="form-control" placeholder="JohnDoe@email.com"/>
+                    <button class="btn btn-lg btn-dark" type="button">Enter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Cards-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title">Virtual</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, aperiam?</p>
+                            <a href="#" class="btn btn-primary btn-sm w-50 align-items-center">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-water"></i>
+                            </div>
+                            <h3 class="card-title">Versatile</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, aperiam?</p>
+                            <a href="#" class="btn btn-dark btn-sm w-50 align-items-center">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-door-open"></i>
+                            </div>
+                            <h3 class="card-title">Accessible</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, aperiam?</p>
+                            <a href="#" class="btn btn-primary btn-sm w-50 align-items-center">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+
+                  
+            </div>
+        </div>
+    </section>
+
+    <!--Learn-->
+    <section id="learn">
+        <div class="container">
+            <div class="row g-3 align-items-center justify-content-center">
+
+                <div class="col-md">
+                    <img class="img-fluid" src="img/svg_file1.svg">
+                </div>
+
+                <div class="col-md p-5">
+                    <h4>We bring the knowledge to you.</h4>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maiores ipsam quia dolor voluptatibus porro, qui quis minima molestiae! Nemo!
+                        <br/><br/>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat eligendi, excepturi ad beatae esse sint obcaecati tempore perferendis quos veniam ipsam ut, ab sapiente, maiores eos error vitae ipsum.
+                    </p>
+                    <a href="#" class="btn btn-light">
+                        <i class="bi bi-chevron-right"></i>
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Learn-2-->
+    <section id="" class="bg-dark text-light" >
+        <div class="container">
+            <div class="row g-3 align-items-center justify-content-center">
+
+
+                <div class="col-md p-5">
+                    <h1>Learn React?</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maiores ipsam quia dolor voluptatibus porro, qui quis minima molestiae! Nemo!
+                        <br/><br/>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat eligendi, excepturi ad beatae esse sint obcaecati tempore perferendis quos veniam ipsam ut, ab sapiente, maiores eos error vitae ipsum.
+                    </p>
+                    <a href="#" class="btn btn-light">
+                        <i class="bi bi-chevron-right"></i>
+                        Read More
+                    </a>
+                </div>
+
+                <div class="col-md">
+                    <img class="img-fluid" src="img/svg_file2.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ-->
+
+    <section>
+        <div class="container p-5">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="FAQ-Accordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ-1-text">
+                            Who are you?
+                        </button>
+                    </h2>
+
+                    <div class="accordion-collapse collapse" id="FAQ-1-text" data-bs-parent="#FAQ-Accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aut eveniet neque laboriosam ea quas? Molestiae, velit aperiam?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#FAQ-2-text">
+                            Where are you?
+                        </button>
+                    </h2>
+
+                    <div class="accordion-collapse collapse" id="FAQ-2-text" data-bs-parent="#FAQ-Accordion">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis natus mollitia exercitationem eligendi corrupti debitis repudiandae praesentium ullam laborum voluptates quia voluptate, amet quo non assumenda enim accusantium fugiat saepe!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#FAQ-3-text">
+                            Walls?
+                        </button>
+                    </h2>
+
+                    <div class="accordion-collapse collapse" id="FAQ-3-text" data-bs-parent="#FAQ-Accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium accusantium tempore nisi reiciendis fugit non nesciunt repellendus sapiente a maxime?
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Instructors-->
+    <section id="instructors" class="bg-primary p-5">
+        <div class="container">
+
+            <h2 class="text-white text-center">Our Instructors</h2>
+            
+            <div class="row g-4 text-center">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card py-4 bg-light">
+                        <i class="bi bi-person-circle h1"></i>
+
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid.</p>
+                            <button class="btn btn-dark">More...</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card py-4 bg-light">
+                        <i class="bi bi-person-circle h1"></i>
+
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid.</p>
+                            <button class="btn btn-dark">More...</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card py-4 bg-light">
+                        <i class="bi bi-person-circle h1"></i>
+
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid.</p>
+                            <button class="btn btn-dark">More...</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card py-4 bg-light">
+                        <i class="bi bi-person-circle h1"></i>
+
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid.</p>
+                            <button class="btn btn-dark">More...</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Contact & Map-->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location: In your walls, Now.</span>
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location: In your walls, Now.</span>
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location: In your walls, Now.</span>
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location: In your walls, Now.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md">
+                    <div id="map" class="map-css"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="">Copyright &copy; 2022 John Ajao</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="enroll" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Fill Out to Join</p>
+              <form action="">
+                  <div class="mb-3">
+                      <label for="first-name" class="col-form-label">First Name:</label>
+                      <input type="text" class="form-control" id="first-name">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obmFqYW8iLCJhIjoiY2wzcnlzN2thMWxyaDNpb2V1bmlrdnNlaCJ9.yWkatcbV8NQf5Z0-RAQtkQ';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+        });
+        </script>
+    
+</body>
+</html>
